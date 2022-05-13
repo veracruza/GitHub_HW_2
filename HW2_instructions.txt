@@ -1,0 +1,46 @@
+1. На локальном репозитории сделать ветки для:
+- Postman git branch Postman
+- Jmeter git branch Jmeter
+- CheckList git branch CheckList
+- Bug Reports git branch BugReports
+- SQL git branch SQL
+- Charles git branch Charles
+- Mobile testing git branch MobileTesting
+
+2. Запушить все ветки на внешний репозиторий 
+	git push  -u origin Postman 
+	git push  -u origin Jmeter
+	git push  -u origin CheckList
+	git push  -u origin BugReports
+	git push  -u origin SQL
+	git push  -u origin Charles
+	git push  -u origin Mobile testing
+3. В ветке BugReports сделать текстовый документ со структурой баг репорта
+	1) git checkout BugReports
+	2) touch Report1.txt
+	3) vim Report1.txt 
+	
+4. Запушить структуру багрепорта на внешний репозиторий
+	1) git add .
+	2) git commit -m "report"
+	3) git push
+5. Вмержить ветку BugReports в Main
+	1) git checkout main
+	2) git merge BugReports
+6. Запушить main на внешний репозиторий.
+	git push -u origin main
+7. В ветке CheckLists набросать структуру чек листа.
+	1) touch List1.txt
+	2) vim List1.txt 
+8. Запушить структуру на внешний репозиторий
+	1) git add .
+	2) git commit -m "list"
+	3) git push
+9. На внешнем репозитории сделать Pull Request ветки CheckList в main
+	1) Create pull request
+	2) Merge
+
+10. Синхронизировать Внешнюю и Локальную ветки Main
+	1) git checkout main
+	2) git pull
+	
