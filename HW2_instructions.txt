@@ -30,8 +30,9 @@
 6. Запушить main на внешний репозиторий.
 	git push -u origin main
 7. В ветке CheckLists набросать структуру чек листа.
-	1) touch List1.txt
-	2) vim List1.txt 
+	1) git checkout  CheckLists
+	2) touch List1.txt
+	3) vim List1.txt 
 8. Запушить структуру на внешний репозиторий
 	1) git add .
 	2) git commit -m "list"
